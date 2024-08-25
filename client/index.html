@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chess Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Move History Section -->
+        <div id="move-history" class="panel history-panel"></div>
+        
+        <!-- Game Board Section -->
+        <div class="game-container">
+            <h1 id="current-player">Current Player: A</h1>
+            <div id="board"></div>
+            <div id="controls">
+                <h3>Selected: <span id="selected-character"></span></h3>
+                <div id="move-buttons"></div>
+            </div>
+        </div>
+        
+        <!-- Chat Section -->
+        <div id="chat" class="panel chat-panel">
+            <div id="chat-messages"></div>
+            <div id="chat-input-container">
+                <input type="text" id="chat-input" placeholder="Type a message...">
+                <button id="chat-send"><img src="send_icon.png" alt="Send"></button>
+            </div>
+        </div>
+    </div>
+    <div id="game-over">
+        <h2 id="winner-announcement"></h2>
+        <button onclick="restartGame()">Start a New Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
